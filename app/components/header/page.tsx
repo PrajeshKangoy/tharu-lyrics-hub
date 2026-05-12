@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Search } from "lucide-react";
+import AuthButton from "../../components/AuthButton/page";
 
 export default function Header() {
   return (
@@ -42,9 +43,9 @@ export default function Header() {
       </div>
 
       {/* Login Button */}
-      <button className="bg-[#333] hover:bg-[#444] text-gray-200 px-6 py-1.5 rounded-full text-sm font-medium transition-all border border-white/10 shadow-lg">
-        Log in
-      </button>
+      {/* <button className="bg-[#333] hover:bg-[#444] text-gray-200 px-6 py-1.5 rounded-full text-sm font-medium transition-all border border-white/10 shadow-lg"> */}
+        <AuthButton />
+      {/* </button> */}
     </nav>
   );
 }

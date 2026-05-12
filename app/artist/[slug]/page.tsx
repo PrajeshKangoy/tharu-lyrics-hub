@@ -193,11 +193,12 @@ export default async function ArtistPage({
   ).slice(0, 4);
 
   return (
+    
     <div className="min-h-screen bg-zinc-950 font-sans text-zinc-100 selection:bg-blue-500/30">
-      <Header />
+      
 
       {/* HERO */}
-      <header className="relative h-[65vh] w-full overflow-hidden">
+      <div className="relative h-[65vh] w-full overflow-hidden">
         <img
           src={artist.imageUrl}
           alt={artist.name}
@@ -230,7 +231,7 @@ export default async function ArtistPage({
             <span>{artist.genre}</span>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* ABOUT */}
       <section className="mx-auto max-w-6xl px-6 py-16">

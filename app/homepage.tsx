@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Search, Music, Play } from 'lucide-react';
 import Link from "next/link";
 
+import Header from "./components/header/page";
+import Footer from "./components/Footer/page";
 
 
 // Custom SVG Social Icons to avoid library export issues
@@ -43,7 +45,7 @@ const Homepage = () => {
     <div className="min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-[#c5a059] selection:text-black">
       
       {/* Header / Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4 md:px-12 bg-black/20 backdrop-blur-sm sticky top-0 z-50">
+      {/* <nav className="flex items-center justify-between px-6 py-4 md:px-12 bg-black/20 backdrop-blur-sm sticky top-0 z-50">
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold tracking-widest text-[#c5a059] leading-none font-serif">THARU</h1>
           <span className="text-[10px] tracking-[0.3em] font-light text-gray-400">LYRICS HUB</span>
@@ -60,7 +62,9 @@ const Homepage = () => {
         <button className="bg-[#333] hover:bg-[#444] text-gray-200 px-6 py-1.5 rounded-full text-sm font-medium transition-all border border-white/10 shadow-lg">
           Log in
         </button>
-      </nav>
+      </nav> */}
+
+        <Header />
 
       {/* Hero Section */}
       <header className="relative w-full max-w-10xl mx-auto px-4 mt-6">
@@ -198,7 +202,7 @@ const Homepage = () => {
   </div>
 </section>
 
-      {/* Footer Navigation */}
+      {/* Footer Navigation
       <footer className="border-t border-white/10 bg-black/60 backdrop-blur-xl mt-20 pt-10 pb-5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
           
@@ -231,7 +235,9 @@ const Homepage = () => {
         <div className="text-center mt-12 text-[10px] text-gray-700 uppercase tracking-[0.4em] font-medium">
           &copy; 2024 Tharu Lyrics Hub. All Rights Reserved.
         </div>
-      </footer>
+      </footer> */}
+
+            <Footer />
     </div>
   );
 };

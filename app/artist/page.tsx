@@ -9,8 +9,8 @@ import {
   Mic2,
   Star,
 } from "lucide-react";
-import Header from "../components/header/page";
-import Footer from "../components/Footer/page";
+// import Header from "../components/header/page";
+// import Footer from "../components/Footer/page";
 
 /* ---------------- SOCIAL ICONS ---------------- */
 const FacebookIcon = () => (
@@ -105,7 +105,9 @@ export default function ArtistsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] text-white">
+    
+    <div className="min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-[#c5a059] selection:text-black">
+    {/* <Header  /> */}
 
       {/* NAVBAR */}
       {/* <nav className="flex justify-between px-6 py-4 border-b border-white/10">
@@ -117,7 +119,7 @@ export default function ArtistsPage() {
         </div>
       </nav> */}
 
-      <Header />
+
 
       {/* HEADER */}
       <div className="text-center py-2 px-4">
@@ -185,7 +187,7 @@ export default function ArtistsPage() {
           ))}
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
