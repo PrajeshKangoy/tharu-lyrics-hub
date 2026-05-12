@@ -1,7 +1,5 @@
 import fs from "fs";
 import path from "path";
-import Header from "../../components/header/page";
-import Footer from "../../components/Footer/page";
 import Link from "next/link";
 
 interface LyricsPageProps {
@@ -80,7 +78,6 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
   return (
     <div className="min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-[#c5a059] selection:text-black">
 
-      <Header />
 
       {/* HERO */}
       <div className="max-w-6xl mx-auto px-6 pt-16 grid md:grid-cols-2 gap-10 items-center">
@@ -157,7 +154,6 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
 
       </div>
 
-      <Footer />
 
     </div>
   );

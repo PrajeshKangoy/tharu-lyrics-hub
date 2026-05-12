@@ -2,8 +2,6 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 
-import Header from "../../components/header/page";
-import Footer from "../../components/Footer/page";
 
 interface PageProps {
   params: Promise<{
@@ -342,7 +340,6 @@ export default async function ArtistPage({
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }
