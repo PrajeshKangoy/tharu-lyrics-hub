@@ -15,10 +15,10 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
 
   // 🎵 Credits (temporary static data)
   const credits = {
-    singer: "Prajesh Kangoy, Sandip Sardar",
-    lyricist: "Prajesh Kangoy",
+    singer: "Kashin Chaudhary, Anuma Chaudhaey",
+    lyricist: "Dev Krishna Biswas",
     composer: "Dev Krishna Biswas",
-    music: "RK Studio",
+    // music: "RK Studio",
   };
 
   // Convert slug → title
@@ -112,9 +112,9 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
             <p>
               Composer: <span className="text-white">{credits.composer}</span>
             </p>
-            <p>
+            {/* <p>
               Music: <span className="text-white">{credits.music}</span>
-            </p>
+            </p> */}
           </div>
 
         </div>

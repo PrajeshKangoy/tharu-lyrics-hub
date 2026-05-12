@@ -8,20 +8,22 @@ export default function Header() {
     <nav className="flex items-center justify-between px-6 py-4 md:px-12 bg-black/20 backdrop-blur-sm sticky top-0 z-50">
 
       {/* Logo */}
-      <div className="flex flex-col">
+      <div className="flex flex-col cursor-pointer">
+        <Link href="/">
         <h1 className="text-2xl font-bold tracking-widest text-[#c5a059] leading-none font-serif">
           THARU
         </h1>
         <span className="text-[10px] tracking-[0.3em] font-light text-gray-400">
           LYRICS HUB
         </span>
+        </Link>
       </div>
 
       {/* Menu */}
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-        <Link href="/" className="hover:text-[#c5a059] transition-colors">
+        {/* <Link href="/" className="hover:text-[#c5a059] transition-colors">
           Home
-        </Link>
+        </Link> */}
 
         <Link href="/artist" className="hover:text-[#c5a059] transition-colors">
           Artists

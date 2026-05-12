@@ -31,7 +31,7 @@ const Homepage = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const trendingSongs = [
-    { id: 1, title: 'Sajna Hamar Humra Laila Aawaixai', artist: 'Prajesh Kangoy, Sandip Sardar', img: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=400&h=400&fit=crop' },
+    { id: 1, title: 'Banijo Hamar Mann Ke Meet Ge', artist: 'Kashin Chaudhary, Anuma Chaudhaey', img: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=400&h=400&fit=crop' },
     { id: 2, title: 'Pogadi', artist: 'Dev Krishna Biswas', img: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=400&h=400&fit=crop' },
     { id: 3, title: 'Tohar Kurti Me (Remix)', artist: 'Annu Chaudhary', img: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&h=400&fit=crop' },
     { id: 4, title: 'Maan Lenu Sathi Toh', artist: 'Ganesh Chaudhary', img: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=400&h=400&fit=crop' },
@@ -51,7 +51,7 @@ const Homepage = () => {
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
           <Link href="/artist" className="hover:text-[#c5a059] transition-colors">Artists</Link>
-          <Link href="/genre" className="hover:text-[#c5a059] transition-colors">Genres</Link>
+          <Link href="/Genres" className="hover:text-[#c5a059] transition-colors">Genres</Link>
 
           <a href="#" className="hover:text-[#c5a059] transition-colors">Folk Traditions</a>
           <a href="#" className="hover:text-[#c5a059] transition-colors">Top Charts</a>
@@ -142,17 +142,42 @@ const Homepage = () => {
   <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
     
     {[
-      { name: "Prajesh Kangoy", img: "https://i.pravatar.cc/150?img=1" },
-      { name: "RK Tharu", img: "https://i.pravatar.cc/150?img=2" },
-      { name: "Annu Chaudhary", img: "https://i.pravatar.cc/150?img=3" },
-      { name: "Dev Krishna Biswas", img: "https://i.pravatar.cc/150?img=4" },
-      { name: "Ganesh Chaudhary", img: "https://i.pravatar.cc/150?img=5" },
+      {
+        name: "Prajesh Kangoy",
+        slug: "prajesh-kangoy",
+        img: "https://i.pravatar.cc/150?img=1",
+      },
+      {
+        name: "RK Tharu",
+        slug: "rk-tharu",
+        img: "https://i.pravatar.cc/150?img=2",
+      },
+      {
+        name: "Annu Chaudhary",
+        slug: "annu-chaudhary",
+        img: "https://i.pravatar.cc/150?img=3",
+      },
+      {
+        name: "Dev Krishna Biswas",
+        slug: "dev-krishna-biswas",
+        img: "https://i.pravatar.cc/150?img=4",
+      },
+      {
+        name: "Ganesh Chaudhary",
+        slug: "ganesh-chaudhary",
+        img: "https://i.pravatar.cc/150?img=5",
+      },
+      {
+        name: "Prabhat Chaudhary",
+        slug: "prabhat-chaudhary",
+        img: "https://i.pravatar.cc/150?img=6",
+      },
     ].map((artist, i) => (
       
       <Link
-        href={`/artist/${artist.name.toLowerCase().replace(/\s+/g, "-")}`}
+        href={`/artist/${artist.slug}`}
         key={i}
-        className="flex flex-col items-center min-w-[100px] group"
+        className="flex flex-col items-center cursor-pointer min-w-[100px] group"
       >
         
         <div className="w-20 h-20 rounded-full overflow-hidden border border-white/10 group-hover:scale-110 transition-transform">
@@ -172,6 +197,7 @@ const Homepage = () => {
 
   </div>
 </section>
+
       {/* Footer Navigation */}
       <footer className="border-t border-white/10 bg-black/60 backdrop-blur-xl mt-20 pt-10 pb-5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
