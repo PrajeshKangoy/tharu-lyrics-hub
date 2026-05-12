@@ -4,9 +4,6 @@ import React, { useState } from 'react';
 import { Search, Music, Play } from 'lucide-react';
 import Link from "next/link";
 
-import Header from "./components/header/page";
-import Footer from "./components/Footer/page";
-
 
 // Custom SVG Social Icons to avoid library export issues
 const FacebookIcon = () => (
@@ -64,7 +61,6 @@ const Homepage = () => {
         </button>
       </nav> */}
 
-        <Header />
 
       {/* Hero Section */}
       <header className="relative w-full max-w-10xl mx-auto px-4 mt-6">
@@ -237,7 +233,6 @@ const Homepage = () => {
         </div>
       </footer> */}
 
-            <Footer />
     </div>
   );
 };

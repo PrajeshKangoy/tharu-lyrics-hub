@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react';
 import { Search, Music, Disc, ChevronRight, PlayCircle, BarChart3 } from 'lucide-react';
-import Header from "../components/header/page";
-import Footer from "../components/Footer/page";
 
 const Genres = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -77,9 +75,7 @@ const Genres = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-[#c5a059] selection:text-black">
-      <Header />
-      
+    <div className="min-h-screen bg-[#0f0f0f] text-white font-sans selection:bg-[#c5a059] selection:text-black">      
       {/* Hero Section */}
       <div className="relative pt-20 pb-16 px-6 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_#c5a05910_0%,_transparent_70%)] pointer-events-none"></div>
@@ -158,8 +154,6 @@ const Genres = () => {
       </main>
 
       
-      <Footer />
-
     </div>
   );
 };
