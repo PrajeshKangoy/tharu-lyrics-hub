@@ -21,8 +21,8 @@ export default function Footer() {
           <Link href="/about" className="hover:text-[#c5a059] transition-colors">About Us</Link>
           <Link href="/Genres" className="hover:text-[#c5a059] transition-colors">Genres</Link>
 
-          <a href="#" className="hover:text-white transition-colors">Policies</a>
-          <a href="#" className="hover:text-white transition-colors">Contact Us</a>
+          <Link href="/policies" className="hover:text-white transition-colors">Policies</Link>
+          <Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link>
         </div>
 
 {/* Social Icons */}
