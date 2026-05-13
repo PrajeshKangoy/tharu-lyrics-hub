@@ -90,9 +90,9 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
 
         <div>
 
-          <p className="text-[#c5a059] uppercase tracking-[0.3em] text-sm mb-3">
+          {/* <p className="text-[#c5a059] uppercase tracking-[0.3em] text-sm mb-3">
             Trending Song
-          </p>
+          </p> */}
 
           <h1 className="text-5xl font-bold mb-6 font-serif">
             {formattedTitle}
