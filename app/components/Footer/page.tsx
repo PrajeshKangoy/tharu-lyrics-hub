@@ -18,10 +18,10 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-8 text-[11px] text-gray-400 font-bold uppercase tracking-widest">
-          <a href="#" className="hover:text-white transition-colors">My lyrics</a>
+          <Link href="/about" className="hover:text-[#c5a059] transition-colors">About Us</Link>
           <Link href="/Genres" className="hover:text-[#c5a059] transition-colors">Genres</Link>
 
-          <a href="#" className="hover:text-white transition-colors">Folk Traditions</a>
+          <a href="#" className="hover:text-white transition-colors">Policies</a>
           <a href="#" className="hover:text-white transition-colors">Contact Us</a>
         </div>
 
