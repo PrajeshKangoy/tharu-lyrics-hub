@@ -88,10 +88,10 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
       </div>
 
       {/* MAIN LAYOUT */}
-      <div className="max-w-7xl mx-auto px-6 mt-24 grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div className="max-w-5xl mx-auto px-6 mt-24 grid grid-cols-1 lg:grid-cols-10 gap-10">
 
         {/* LEFT PANEL - SONG INFO */}
-        <div className="hidden lg:block lg:col-span-2">
+        {/* <div className="hidden lg:block lg:col-span-2">
           <div className="bg-[#151515] p-5 rounded-3xl sticky top-15">
             <h3 className="text-lg font-bold text-[#c5a059] mb-4">
               Song Info
@@ -131,7 +131,7 @@ export default async function LyricsPage({ params }: LyricsPageProps) {
 
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* CENTER - LYRICS + REVIEWS */}
         <div className="lg:col-span-7">
