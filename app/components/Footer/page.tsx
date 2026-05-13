@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Text */}
-      <div className="text-center mt-12 text-[10px] text-gray-700 uppercase tracking-[0.4em] font-medium">
+      <div className="text-center mt-12 text-[10px] text-gray-400 uppercase tracking-[0.4em] font-medium">
         © 2024 Tharu Lyrics Hub. All Rights Reserved.
       </div>
 
