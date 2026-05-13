@@ -50,7 +50,7 @@ export default function ContactPage() {
                   Email
                 </p>
 
-                <p>hello@tharulyricshub.com</p>
+                <p>contact@tharulyricshub.com</p>
               </div>
 
               <div>
