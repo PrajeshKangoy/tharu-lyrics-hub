@@ -12,7 +12,7 @@ type Song = {
   slug: string;
   title: string;
   singer: string;
-  duration: string;
+  duration: string
   plays: string;
 };
 

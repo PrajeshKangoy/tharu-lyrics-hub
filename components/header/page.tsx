@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import AuthButton from "../../components/AuthButton/page";
+import AuthButton from "../AuthButton/page";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
